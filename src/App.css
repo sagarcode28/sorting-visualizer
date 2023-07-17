@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --headline-color: #001858;
+    --paragraph-color: #172c66;
+    --button-color: #f582ae;
+    --button-text: #001858;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background: #fef6e4;
+}
+
+
+div.merge-sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.merge-sort div.array-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    div.merge-sort div.array-container {
+        width: 100%;
+    }
+}
+
+div.merge-sort div.array-container .array-bar {
+    width: 0.3rem;
+    background: var(--paragraph-color);
+    margin: 0 1px;
+    display: inline-block;
+}
+
+div.merge-sort div.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+div.merge-sort div.buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--button-color);
+    color: var(--button-text);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 25%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--paragraph-color);
+}
+
+header .code a {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: var(--paragraph-color);
+}
+
+div.range-slider {
+    margin: 1rem 0;
+}
+
+div.range-slider input {
+    width: 100%;
+    background: var(--button-color);
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+div.range-slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--headline-color);
+    cursor: pointer;
+    box-shadow: -407px 0 0 400px var(--headline-color);
+}
+
+div.range-slider span {
+    font-size: 1.25rem;
+    color: var(--headline-color);
+    font-weight: bold;
+}
+
+div.merge-sort div.footer p{
+    font-size: 1rem;
+    color: var(--headline-color);
+}
